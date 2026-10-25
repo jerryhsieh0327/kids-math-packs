@@ -11,3 +11,7 @@ Daily Apple-Pencil math quizzes (iPad Safari) at https://jerryhsieh0327.github.i
 2. `./build.sh` (runs build.py + node --check).
 3. Publish via Composio GitHub (account jerryhsieh0327): `GITHUB_COMMIT_MULTIPLE_FILES` owner=jerryhsieh0327 repo=kids-math-packs branch=main, upserts = `index.html`, `DATE/quiz.json`, `DATE/index.html`, `DATE/parent.html` (content `$file:/workspace/kids-math-packs/<path>`). Also upsert `assets/*` if changed (bump `?v=` in build.py).
 4. Open https://jerryhsieh0327.github.io/kids-math-packs/DATE/ and wait until it loads (HTTP 200, about 1 minute after the commit).
+
+## Content rules
+- All question text and options in English (math terms may have 中文 in parentheses).
+- Use real English first names/surnames (Emma, Lucas, Mia, Oliver, Mrs. Brown, Mr. Smith…). Never pinyin or translated Chinese names (no Zhang, Li, Xiaoming…). Mum/Dad, big sister/little sister are fine.
