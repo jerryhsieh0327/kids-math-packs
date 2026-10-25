@@ -18,19 +18,19 @@ button{font-size:22px;padding:10px 22px;border-radius:12px;border:none;backgroun
 #out{display:none;text-align:center;padding:16px}#out img{max-width:100%;border:2px solid #ccc}
 #out p{font-size:22px}
 </style></head><body>
-<header>Seren 數學小測 2026-10-25<small>每題用 Apple Pencil 把算式和步驟寫在框裡，寫完按最下面「完成」。</small></header>
+<header>Seren 數學小測 2026-10-25<small>第27課・工作效率／工程問題。每題用 Apple Pencil 把算式和步驟寫在框裡，寫完按最下面「完成」。</small></header>
 <main id="m"></main>
 <button id="done">完成 ✅</button>
 <div id="out"><p>如果沒有跳出分享：<b>長按圖片 →「儲存圖片」</b>，再到微信把圖片傳給爸爸／大管家。</p><img id="img" alt="作答圖片"><p><button onclick="document.getElementById('out').style.display='none'">返回修改</button></p></div>
 <script>
-const DATE='2026-10-25', KEY='kmp-'+DATE+'-';
+const DATE='2026-10-25', KEY='kmp-'+DATE+'-v2-';
 const QS=[
- {t:'第 1 題　四則混合運算',q:'計算：125 + 75 × 4 − 360 ÷ 9'},
- {t:'第 2 題　分數',q:'計算：2/5 + 3/10 = ？（答案寫成最簡分數）'},
- {t:'第 3 題　小數',q:'計算：12.5 − 3.75 + 0.6'},
- {t:'第 4 題　周長與面積',q:'一個長方形長 12 cm、寬 7 cm。它的周長和面積各是多少？'},
- {t:'第 5 題　應用題',q:'小明和小華一共有 150 張貼紙，小明比小華多 30 張。小華有幾張？小明有幾張？（可以畫線段圖）'},
- {t:'第 6 題',ch:true,q:'一個長方形的長是寬的 3 倍，周長是 64 cm。這個長方形的面積是多少平方公分？'}
+ {t:'第 1 題　求效率',q:'張阿姨 2 小時做了 14 個包子，李阿姨 3 小時做了 18 個包子。她們每小時各做幾個？誰的效率比較高？'},
+ {t:'第 2 題　求時間',q:'小明每小時讀 8 頁書。一本 48 頁的故事書，他要讀幾小時才能讀完？'},
+ {t:'第 3 題　求工作量',q:'小華每小時縫 12 件衣服。她連續做了 3 小時，一共縫了幾件？'},
+ {t:'第 4 題　比較效率',q:'一份工作，姐姐單獨做要 6 小時做完，妹妹單獨做要 4 小時做完。誰的效率比較高？為什麼？'},
+ {t:'第 5 題　求時間',q:'工廠一台機器每小時生產 120 個零件。要生產 960 個零件，需要開機幾小時？'},
+ {t:'第 6 題',ch:true,q:'媽媽每小時擦 8 扇窗戶，爸爸每小時擦 12 扇。家裡一共有 40 扇窗戶，兩人一起擦，幾小時可以擦完？'}
 ];
 const pads=[];
 function Pad(cv,i){
