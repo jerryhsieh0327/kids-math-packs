@@ -1,0 +1,21 @@
+{
+ "date":"2026-10-25","child":"Seren","label":"TEMPLATE / demo",
+ "topic":"Lesson 27: Work Rate (工作效率／工程問題)",
+ "formulas":["Work done ÷ Time = Rate (工作效率)","Rate × Time = Work done (工作量)","Work done ÷ Rate = Time (時間)","Work rate = the amount done in one unit of time (單位時間內完成的工作量)"],
+ "questions":[
+  {"title":"Question 1 · Find the rate","q":"Auntie Zhang made 14 buns in 2 hours. Auntie Li made 18 buns in 3 hours. How many buns does each make per hour? Who works faster?",
+   "answer":"Zhang 7 buns/h; Li 6 buns/h; Auntie Zhang is faster","steps":["Rate = work ÷ time","Zhang: 14 ÷ 2 = 7 buns per hour","Li: 18 ÷ 3 = 6 buns per hour","7 > 6, so Auntie Zhang is faster"],
+   "mistakes":"Comparing totals (18 > 14) instead of dividing by time; dividing time by work."},
+  {"title":"Question 2 · Find the time","q":"Ming reads 8 pages per hour. How many hours does he need to read a 48-page storybook?",
+   "answer":"6 hours","steps":["Time = work ÷ rate","48 ÷ 8 = 6 hours"],"mistakes":"48 × 8 or 48 − 8."},
+  {"title":"Question 3 · Find the work done","q":"Hua sews 12 shirts per hour. She sews for 3 hours. How many shirts does she sew altogether?",
+   "answer":"36 shirts","steps":["Work = rate × time","12 × 3 = 36 shirts"],"mistakes":"12 ÷ 3 = 4 or 12 + 3 = 15."},
+  {"title":"Question 4 · Compare rates","q":"Big sister takes 6 hours to finish a job alone. Little sister takes 4 hours to finish the same job alone. Who has the higher work rate? Explain why.",
+   "answer":"Little sister (1/4 job per hour > 1/6 job per hour)","steps":["Treat the whole job as 1","Big sister: 1 ÷ 6 = 1/6 job per hour","Little sister: 1 ÷ 4 = 1/4 job per hour","1/4 > 1/6 — same job in less time means higher rate"],
+   "mistakes":"Thinking more hours means more work, so choosing big sister."},
+  {"title":"Question 5 · Find the time","q":"A machine makes 120 parts per hour. How many hours does it need to make 960 parts?",
+   "answer":"8 hours","steps":["Time = work ÷ rate","960 ÷ 120 = 8 hours"],"mistakes":"Writing 120 ÷ 960, or subtracting."},
+  {"title":"Question 6","challenge":true,"q":"Mum cleans 8 windows per hour and Dad cleans 12 windows per hour. The house has 40 windows. If they clean together, how many hours will it take?",
+   "answer":"2 hours","steps":["Combined rate = 8 + 12 = 20 windows per hour","Time = 40 ÷ 20 = 2 hours","Check: Mum 16 + Dad 24 = 40 ✓"],"mistakes":"Using only one person's rate (40 ÷ 8), or subtracting the rates."}
+ ]
+}
