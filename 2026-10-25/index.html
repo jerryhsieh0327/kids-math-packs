@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Seren 數學小測 2026-10-25</title>
+<style>
+body{font-family:-apple-system,"PingFang TC","Noto Sans TC",sans-serif;background:#fff8ec;margin:0;color:#333;-webkit-user-select:none;user-select:none}
+header{background:#ff9f43;color:#fff;padding:18px 24px;font-size:28px;font-weight:700}
+header small{display:block;font-size:17px;font-weight:400;margin-top:4px}
+main{max-width:1100px;margin:auto;padding:16px}
+.q{background:#fff;border-radius:18px;box-shadow:0 2px 8px #0001;margin:18px 0;padding:18px}
+.q h2{margin:0 0 10px;font-size:24px}.tag{background:#e84393;color:#fff;border-radius:10px;padding:2px 10px;font-size:18px;margin-left:8px}
+.q p{font-size:24px;line-height:1.6;margin:6px 0 12px}
+canvas{width:100%;height:420px;border:3px dashed #ffbe76;border-radius:14px;background:#fff;touch-action:none;display:block}
+.btns{margin-top:10px;display:flex;gap:12px}
+button{font-size:22px;padding:10px 22px;border-radius:12px;border:none;background:#dfe6e9}
+#done{display:block;margin:24px auto 60px;font-size:30px;padding:18px 60px;background:#00b894;color:#fff;font-weight:700}
+#out{display:none;text-align:center;padding:16px}#out img{max-width:100%;border:2px solid #ccc}
+#out p{font-size:22px}
+</style></head><body>
+<header>Seren 數學小測 2026-10-25<small>每題用 Apple Pencil 把算式和步驟寫在框裡，寫完按最下面「完成」。</small></header>
+<main id="m"></main>
+<button id="done">完成 ✅</button>
+<div id="out"><p>如果沒有跳出分享：<b>長按圖片 →「儲存圖片」</b>，再到微信把圖片傳給爸爸／大管家。</p><img id="img" alt="作答圖片"><p><button onclick="document.getElementById('out').style.display='none'">返回修改</button></p></div>
+<script>
+const DATE='2026-10-25', KEY='kmp-'+DATE+'-';
+const QS=[
+ {t:'第 1 題　四則混合運算',q:'計算：125 + 75 × 4 − 360 ÷ 9'},
+ {t:'第 2 題　分數',q:'計算：2/5 + 3/10 = ？（答案寫成最簡分數）'},
+ {t:'第 3 題　小數',q:'計算：12.5 − 3.75 + 0.6'},
+ {t:'第 4 題　周長與面積',q:'一個長方形長 12 cm、寬 7 cm。它的周長和面積各是多少？'},
+ {t:'第 5 題　應用題',q:'小明和小華一共有 150 張貼紙，小明比小華多 30 張。小華有幾張？小明有幾張？（可以畫線段圖）'},
+ {t:'第 6 題',ch:true,q:'一個長方形的長是寬的 3 倍，周長是 64 cm。這個長方形的面積是多少平方公分？'}
+];
+const pads=[];
+function Pad(cv,i){
+  const ctx=cv.getContext('2d');let strokes=[];let cur=null;let penSeen=false;
+  try{strokes=JSON.parse(localStorage.getItem(KEY+i)||'[]')}catch(e){}
+  function size(){const r=cv.getBoundingClientRect(),d=window.devicePixelRatio||1;cv.width=r.width*d;cv.height=r.height*d;ctx.setTransform(d,0,0,d,0,0);redraw()}
+  function seg(s){ctx.strokeStyle='#1e3799';ctx.lineCap='round';ctx.lineJoin='round';
+    for(let k=1;k<s.length;k++){const a=s[k-1],b=s[k];ctx.lineWidth=1.5+3.5*(b[2]||0.5);ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke()}
+    if(s.length==1){ctx.beginPath();ctx.arc(s[0][0],s[0][1],2,0,7);ctx.fillStyle='#1e3799';ctx.fill()}}
+  function redraw(){ctx.clearRect(0,0,cv.width,cv.height);strokes.forEach(seg)}
+  function pt(e){const r=cv.getBoundingClientRect();return [Math.round(e.clientX-r.left),Math.round(e.clientY-r.top),e.pointerType=='pen'?(e.pressure||0.5):0.5]}
+  function ok(e){if(e.pointerType=='pen'){penSeen=true;return true}return !penSeen} // once a pen is used, ignore palm/finger
+  cv.addEventListener('pointerdown',e=>{if(!ok(e))return;e.preventDefault();cv.setPointerCapture(e.pointerId);cur={id:e.pointerId,p:[pt(e)]};strokes.push(cur.p);redraw()});
+  cv.addEventListener('pointermove',e=>{if(!cur||e.pointerId!==cur.id)return;e.preventDefault();
+    const ev=e.getCoalescedEvents?e.getCoalescedEvents():[e];ev.forEach(x=>cur.p.push(pt(x)));redraw()});
+  const end=e=>{if(cur&&e.pointerId===cur.id){cur=null;save()}};
+  cv.addEventListener('pointerup',end);cv.addEventListener('pointercancel',end);
+  ['touchstart','touchmove'].forEach(t=>cv.addEventListener(t,e=>e.preventDefault(),{passive:false}));
+  function save(){try{localStorage.setItem(KEY+i,JSON.stringify(strokes))}catch(e){}}
+  this.clear=()=>{if(strokes.length&&!confirm('確定要清除這題的字嗎？'))return;strokes=[];save();redraw()};
+  this.undo=()=>{strokes.pop();save();redraw()};
+  this.data=()=>({w:cv.getBoundingClientRect().width,h:cv.getBoundingClientRect().height,strokes});
+  this.size=size;this.seg=seg;
+}
+const m=document.getElementById('m');
+QS.forEach((o,i)=>{const d=document.createElement('section');d.className='q';
+ d.innerHTML='<h2>'+o.t+(o.ch?'<span class="tag">挑戰題 ⭐</span>':'')+'</h2><p>'+o.q+'</p><canvas></canvas><div class="btns"><button>↩︎ 復原</button><button>🧽 清除</button></div>';
+ m.appendChild(d);const p=new Pad(d.querySelector('canvas'),i);pads.push(p);
+ const b=d.querySelectorAll('button');b[0].onclick=p.undo;b[1].onclick=p.clear;});
+function resizeAll(){pads.forEach(p=>p.size())}
+window.addEventListener('resize',()=>setTimeout(resizeAll,100));resizeAll();
+function wrap(ctx,text,maxW){const lines=[];let line='';for(const ch of text){if(ctx.measureText(line+ch).width>maxW){lines.push(line);line=ch}else line+=ch}lines.push(line);return lines}
+function compose(){
+  const W=1200,S=2,pad=30;const c=document.createElement('canvas');const ctx=c.getContext('2d');ctx.font='28px sans-serif';
+  const blocks=QS.map((o,i)=>{const d=pads[i].data();const sc=(W-2*pad)/(d.w||1);const lines=wrap(ctx,o.q,W-2*pad);return {o,d,sc,lines,h:60+lines.length*38+d.h*sc+30}});
+  const H=110+blocks.reduce((a,b)=>a+b.h,0);c.width=W*S;c.height=H*S;ctx.scale(S,S);
+  ctx.fillStyle='#fff';ctx.fillRect(0,0,W,H);ctx.fillStyle='#ff9f43';ctx.fillRect(0,0,W,90);
+  ctx.fillStyle='#fff';ctx.font='bold 40px sans-serif';ctx.fillText('Seren 數學小測 '+DATE,pad,58);
+  let y=110;
+  blocks.forEach(b=>{ctx.fillStyle='#333';ctx.font='bold 30px sans-serif';ctx.fillText(b.o.t+(b.o.ch?'【挑戰題】':''),pad,y+30);
+    ctx.font='28px sans-serif';b.lines.forEach((l,k)=>ctx.fillText(l,pad,y+72+k*38));
+    const top=y+60+b.lines.length*38;ctx.strokeStyle='#ccc';ctx.lineWidth=2;ctx.strokeRect(pad,top,W-2*pad,b.d.h*b.sc);
+    ctx.save();ctx.translate(pad,top);ctx.scale(b.sc,b.sc);b.d.strokes.forEach(s=>drawStroke(ctx,s));ctx.restore();y+=b.h});
+  return c;
+}
+document.getElementById('done').onclick=async()=>{
+  const c=compose();const url=c.toDataURL('image/png');
+  const blob=await new Promise(r=>c.toBlob(r,'image/png'));
+  const file=new File([blob],'Seren-math-'+DATE+'.png',{type:'image/png'});
+  document.getElementById('img').src=url;document.getElementById('out').style.display='block';
+  if(navigator.canShare&&navigator.canShare({files:[file]})){try{await navigator.share({files:[file],title:'Seren 數學小測 '+DATE})}catch(e){}}
+  document.getElementById('out').scrollIntoView();
+};
+</script></body></html>
