@@ -1,0 +1,16 @@
+body{font-family:-apple-system,"PingFang TC","Noto Sans TC",sans-serif;background:#fff8ec;margin:0;color:#333}
+main,header{-webkit-user-select:none;user-select:none}
+header{background:#ff9f43;color:#fff;padding:18px 24px;font-size:28px;font-weight:700}
+header small{display:block;font-size:17px;font-weight:400;margin-top:4px}
+main{max-width:1100px;margin:auto;padding:16px}
+.q{background:#fff;border-radius:18px;box-shadow:0 2px 8px #0001;margin:18px 0;padding:18px}
+.q h2{margin:0 0 10px;font-size:24px}.tag{background:#e84393;color:#fff;border-radius:10px;padding:2px 10px;font-size:18px;margin-left:8px}
+.q p{font-size:24px;line-height:1.6;margin:6px 0 12px}
+.q canvas{width:100%;height:420px;border:3px dashed #ffbe76;border-radius:14px;background:#fff;touch-action:none;display:block}
+.btns{margin-top:10px;display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+button,.btn{font-size:22px;padding:10px 22px;border-radius:12px;border:none;background:#dfe6e9;color:#333;text-decoration:none;display:inline-block}
+#done{display:block;margin:24px auto 60px;font-size:30px;padding:18px 60px;background:#00b894;color:#fff;font-weight:700}
+#ov{display:none;position:fixed;inset:0;background:rgba(255,255,255,.98);z-index:99;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:16px;text-align:center}
+#ov .msg{font-size:22px;margin:10px 0}#ov .err{color:#c0392b;font-weight:700;font-size:20px;white-space:pre-wrap}
+#ov img{max-width:100%;border:2px solid #ccc;-webkit-touch-callout:default;-webkit-user-select:auto;user-select:auto;pointer-events:auto;touch-action:auto}
+#spin{font-size:30px;margin-top:40vh}
