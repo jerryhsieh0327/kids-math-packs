@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-27",
+  "child": "Seren",
+  "label": "",
+  "level": 3,
+  "topic": "Lesson 27: Work Rate (工作效率／工程問題)",
+  "formulas": [
+    "Work done ÷ Time = Rate (工作效率)",
+    "Rate × Time = Work done (工作量)",
+    "Work done ÷ Rate = Time (時間)",
+    "Work rate = the amount done in one unit of time (單位時間內完成的工作量)"
+  ],
+  "questions": [
+    {
+      "title": "Find the rate",
+      "level": 3,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "Emma baked 540 muffins in 6 hours. Lucas baked 720 muffins in 9 hours. Who works faster, and by how many muffins per hour?",
+      "options": {
+        "A": "Lucas, by 180 muffins per hour",
+        "B": "Emma, by 10 muffins per hour",
+        "C": "Lucas, by 10 muffins per hour",
+        "D": "They work at the same rate"
+      },
+      "answer": "B",
+      "explanation": "Rate = work ÷ time. Emma: 540 ÷ 6 = 90 muffins/h. Lucas: 720 ÷ 9 = 80 muffins/h. 90 − 80 = 10, so Emma is faster by 10 muffins per hour.",
+      "wrong": {
+        "A": "You compared the totals (720 − 540 = 180). First divide each total by its time to get the rate.",
+        "C": "You found the difference of 10 correctly but picked the wrong person: Emma's rate (90) is higher than Lucas's (80).",
+        "D": "Check: 540 ÷ 6 = 90 and 720 ÷ 9 = 80 — they are not equal."
+      },
+      "mistakes": "Comparing totals instead of rates; mixing up who is faster."
+    },
+    {
+      "title": "Find the time",
+      "level": 3,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "Mia packs 125 boxes per hour. How many hours does she need to pack 875 boxes?",
+      "options": {
+        "A": "750 hours",
+        "B": "7 hours",
+        "C": "8 hours",
+        "D": "109375 hours"
+      },
+      "answer": "B",
+      "explanation": "Time = work ÷ rate = 875 ÷ 125 = 7 hours. Check: 125 × 7 = 875.",
+      "wrong": {
+        "A": "You subtracted (875 − 125). To find time, divide the work by the rate.",
+        "C": "Place-value slip: 875 ÷ 125 = 7, not 8. Check: 125 × 8 = 1000.",
+        "D": "You multiplied (875 × 125). Rate × time gives work; here divide instead."
+      },
+      "mistakes": "Subtracting or multiplying instead of dividing; place-value errors."
+    },
+    {
+      "title": "Find the work done",
+      "level": 3,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "Oliver paints 168 fences per hour. He paints for 5 hours. How many fences does he paint altogether?",
+      "options": {
+        "A": "173 fences",
+        "B": "840 fences",
+        "C": "33 fences",
+        "D": "163 fences"
+      },
+      "answer": "B",
+      "explanation": "Work = rate × time = 168 × 5 = 840 fences.",
+      "wrong": {
+        "A": "You added (168 + 5). Each hour he paints 168, so multiply: 168 × 5.",
+        "C": "You roughly divided. Use work = rate × time.",
+        "D": "You subtracted (168 − 5). Use work = rate × time."
+      },
+      "mistakes": "Adding, subtracting, or dividing instead of multiplying."
+    },
+    {
+      "title": "Remaining work",
+      "level": 3,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "There are 960 stickers to put on cards. Ava puts on 120 stickers per hour. After she works for 3 hours, how many stickers are still left?",
+      "options": {
+        "A": "360 stickers",
+        "B": "600 stickers",
+        "C": "840 stickers",
+        "D": "240 stickers"
+      },
+      "answer": "B",
+      "explanation": "In 3 hours Ava finishes 120 × 3 = 360 stickers. Left: 960 − 360 = 600 stickers.",
+      "wrong": {
+        "A": "360 is the amount already done, not what is left. Remaining = 960 − 360 = 600.",
+        "C": "You only subtracted one hour's work (960 − 120). She worked 3 hours: subtract 360.",
+        "D": "You may have used 960 ÷ 4 or another wrong step. Done = 120 × 3 = 360; left = 600."
+      },
+      "mistakes": "Reporting done amount instead of remaining; subtracting only one hour."
+    },
+    {
+      "title": "Find the rate",
+      "level": 3,
+      "topic": "work rate",
+      "isReview": true,
+      "q": "Noah washed 448 plates in 7 hours. What is Noah's work rate in plates per hour?",
+      "options": {
+        "A": "64 plates per hour",
+        "B": "3136 plates per hour",
+        "C": "441 plates per hour",
+        "D": "455 plates per hour"
+      },
+      "answer": "A",
+      "explanation": "Rate = work ÷ time = 448 ÷ 7 = 64 plates per hour.",
+      "wrong": {
+        "B": "You multiplied (448 × 7). Rate is work divided by time.",
+        "C": "You subtracted (448 − 7). Use rate = work ÷ time.",
+        "D": "You added (448 + 7). Divide the plates by the hours."
+      },
+      "mistakes": "Multiplying, adding, or subtracting instead of dividing work by time."
+    },
+    {
+      "title": "Working together after a head start",
+      "level": 4,
+      "topic": "work rate",
+      "isReview": false,
+      "challenge": true,
+      "q": "There are 1800 pages to copy. Lucas copies 150 pages per hour alone for 4 hours. Then Mia joins and copies 250 pages per hour while Lucas keeps working at 150 pages per hour. How many more hours until they finish together?",
+      "options": {
+        "A": "12 hours",
+        "B": "3 hours",
+        "C": "4.8 hours",
+        "D": "8 hours"
+      },
+      "answer": "B",
+      "explanation": "Lucas alone for 4 hours: 150 × 4 = 600 pages done. Left: 1800 − 600 = 1200. Together rate: 150 + 250 = 400 pages/h. Time left: 1200 ÷ 400 = 3 hours. Check: Lucas 450 + Mia 750 = 1200.",
+      "wrong": {
+        "A": "You may have divided 1200 by 100 or used a wrong combined rate. Together they do 400 per hour: 1200 ÷ 400 = 3.",
+        "C": "You used only Mia's rate (1200 ÷ 250 = 4.8). Add Lucas's rate too when they work together.",
+        "D": "You used only Lucas's rate for the remaining (1200 ÷ 150). Add Mia's 250 as well."
+      },
+      "mistakes": "Forgetting the head-start amount; using only one person's rate for the remaining work."
+    }
+  ]
+}
