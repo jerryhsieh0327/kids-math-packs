@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-28",
+  "child": "Seren",
+  "label": "",
+  "level": 4,
+  "topic": "Lesson 27 Work Rate + syllabus review (分配律／括號／未知因數)",
+  "formulas": [
+    "Work done ÷ Time = Rate (工作效率)",
+    "Rate × Time = Work done (工作量)",
+    "Remaining = Total − Rate × Time (剩餘工作量)",
+    "Distributive: (a±b)×c = a×c ± b×c (分配律)",
+    "Order: ( ) then [ ], then ×÷, then +− (運算順序)"
+  ],
+  "questions": [
+    {
+      "title": "Remaining work",
+      "level": 4,
+      "topic": "work rate",
+      "isReview": true,
+      "q": "There are 2160 leaflets to fold. Chloe folds 180 leaflets per hour. After she works for 4 hours, how many leaflets are still left?",
+      "options": {
+        "A": "720 leaflets",
+        "B": "1440 leaflets",
+        "C": "1980 leaflets",
+        "D": "1080 leaflets"
+      },
+      "answer": "B",
+      "explanation": "Done in 4 hours: 180 × 4 = 720 leaflets. Remaining = 2160 − 720 = 1440 leaflets.",
+      "wrong": {
+        "A": "720 is the amount already folded, not what is left. Remaining = 2160 − 720 = 1440.",
+        "C": "You only subtracted one hour (2160 − 180). She worked 4 hours: subtract 720.",
+        "D": "You may have halved 2160. Use remaining = total − rate × time = 2160 − 720 = 1440."
+      },
+      "mistakes": "Reporting done instead of remaining; subtracting only one hour."
+    },
+    {
+      "title": "Find the rate",
+      "level": 4,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "Sophia sorted 1440 postcards in 8 hours. What is Sophia's work rate in postcards per hour?",
+      "options": {
+        "A": "180 postcards per hour",
+        "B": "11520 postcards per hour",
+        "C": "1432 postcards per hour",
+        "D": "1448 postcards per hour"
+      },
+      "answer": "A",
+      "explanation": "Rate = work ÷ time = 1440 ÷ 8 = 180 postcards per hour. Check: 180 × 8 = 1440.",
+      "wrong": {
+        "B": "You multiplied (1440 × 8). Rate is work divided by time.",
+        "C": "You subtracted (1440 − 8). Use rate = work ÷ time.",
+        "D": "You added (1440 + 8). Divide the postcards by the hours."
+      },
+      "mistakes": "Multiplying, adding, or subtracting instead of dividing."
+    },
+    {
+      "title": "Find the work done",
+      "level": 4,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "Ethan builds 256 toy cars per hour. He works for 6 hours. How many toy cars does he build altogether?",
+      "options": {
+        "A": "262 toy cars",
+        "B": "250 toy cars",
+        "C": "1536 toy cars",
+        "D": "42 toy cars"
+      },
+      "answer": "C",
+      "explanation": "Work = rate × time = 256 × 6 = 1536 toy cars.",
+      "wrong": {
+        "A": "You added (256 + 6). Each hour he builds 256, so multiply.",
+        "B": "You subtracted (256 − 6). Use work = rate × time.",
+        "D": "You roughly divided. Use work = rate × time = 256 × 6."
+      },
+      "mistakes": "Adding, subtracting, or dividing instead of multiplying."
+    },
+    {
+      "title": "Distributive / make 100",
+      "level": 4,
+      "topic": "distributive",
+      "isReview": true,
+      "q": "Use a smart way to find 248 × 25. Which answer is correct?",
+      "options": {
+        "A": "2480",
+        "B": "6200",
+        "C": "6225",
+        "D": "5200"
+      },
+      "answer": "B",
+      "explanation": "25 = 100 ÷ 4, so 248 × 25 = 248 × 100 ÷ 4 = 24800 ÷ 4 = 6200. Or (200 + 48) × 25 = 5000 + 1200 = 6200.",
+      "wrong": {
+        "A": "You may have done 248 × 10. Multiply by 25, not 10: 248 × 25 = 6200.",
+        "C": "Close but off: 249 × 25 = 6225. Here the factor is 248, so 6200.",
+        "D": "You may have used 200 × 25 + 40 × 5 or another slip. (200+48)×25 = 5000+1200 = 6200."
+      },
+      "mistakes": "Treating ×25 as ×10; off-by-one on the factor; incomplete distributive split."
+    },
+    {
+      "title": "Missing factor",
+      "level": 4,
+      "topic": "missing factor",
+      "isReview": true,
+      "q": "What number belongs in the box? □ × 12 = 1452",
+      "options": {
+        "A": "120",
+        "B": "121",
+        "C": "122",
+        "D": "17424"
+      },
+      "answer": "B",
+      "explanation": "Missing factor = 1452 ÷ 12. 12 × 120 = 1440; 1452 − 1440 = 12, so 12 × 1 more = 121. Check: 121 × 12 = 1452.",
+      "wrong": {
+        "A": "12 × 120 = 1440, which is 12 short of 1452. The box is 121.",
+        "C": "12 × 122 = 1464, which is too big. Try 121.",
+        "D": "You multiplied (1452 × 12). To find the missing factor, divide: 1452 ÷ 12."
+      },
+      "mistakes": "Guessing nearby multiples; multiplying instead of dividing."
+    },
+    {
+      "title": "Remaining work with brackets",
+      "level": 5,
+      "topic": "work rate + order of operations",
+      "isReview": false,
+      "challenge": true,
+      "q": "Noah must finish 2400 pages. He copies 160 pages per hour. He works for [3 + (5 − 2)] hours. How many pages are still left?",
+      "options": {
+        "A": "960 pages",
+        "B": "1440 pages",
+        "C": "1920 pages",
+        "D": "2240 pages"
+      },
+      "answer": "B",
+      "explanation": "Hours first: (5 − 2) = 3, then [3 + 3] = 6 hours. Done: 160 × 6 = 960 pages. Left: 2400 − 960 = 1440 pages.",
+      "wrong": {
+        "A": "960 is the amount already copied, not what is left. Remaining = 2400 − 960 = 1440.",
+        "C": "You may have used only 3 hours (160 × 3 = 480; 2400 − 480 = 1920). Evaluate the brackets: [3+(5−2)] = 6 hours.",
+        "D": "You may have subtracted only one hour (2400 − 160). He worked 6 hours."
+      },
+      "mistakes": "Skipping bracket evaluation; reporting done instead of remaining; using only part of the time expression."
+    }
+  ]
+}
