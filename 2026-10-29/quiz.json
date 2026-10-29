@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-29",
+  "child": "Seren",
+  "label": "",
+  "level": 5,
+  "topic": "Lesson 27 Work Rate + syllabus review (分配律×25／方位／剩餘)",
+  "formulas": [
+    "Work done ÷ Time = Rate (工作效率)",
+    "Rate × Time = Work done (工作量)",
+    "Remaining = Total − Rate × Time (剩餘工作量)",
+    "×25 smart way: n×25 = n×100÷4 (簡便運算)",
+    "Directions: N/S/E/W and NE/NW/SE/SW (方位)"
+  ],
+  "questions": [
+    {
+      "title": "Remaining work",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": true,
+      "q": "There are 3840 bookmarks to make. Liam makes 240 bookmarks per hour. After he works for 5 hours, how many bookmarks are still left?",
+      "options": {
+        "A": "1200 bookmarks",
+        "B": "2640 bookmarks",
+        "C": "3600 bookmarks",
+        "D": "1920 bookmarks"
+      },
+      "answer": "B",
+      "explanation": "Done in 5 hours: 240 × 5 = 1200 bookmarks. Remaining = 3840 − 1200 = 2640 bookmarks.",
+      "wrong": {
+        "A": "1200 is the amount already made, not what is left. Remaining = 3840 − 1200 = 2640.",
+        "C": "You only subtracted one hour (3840 − 240). He worked 5 hours: subtract 1200.",
+        "D": "You may have halved 3840. Use remaining = total − rate × time = 3840 − 1200 = 2640."
+      },
+      "mistakes": "Reporting done instead of remaining; subtracting only one hour."
+    },
+    {
+      "title": "Find the time",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "Grace wraps 175 gifts per hour. How many hours does she need to wrap 1225 gifts?",
+      "options": {
+        "A": "7 hours",
+        "B": "214375 hours",
+        "C": "1050 hours",
+        "D": "6 hours"
+      },
+      "answer": "A",
+      "explanation": "Time = work ÷ rate = 1225 ÷ 175. 175 × 7 = 1225, so she needs 7 hours.",
+      "wrong": {
+        "B": "You multiplied (1225 × 175). Time is work divided by rate.",
+        "C": "You subtracted (1225 − 175). Use time = work ÷ rate.",
+        "D": "175 × 6 = 1050, which is short of 1225. She needs 7 hours."
+      },
+      "mistakes": "Multiplying or subtracting instead of dividing; off-by-one on the quotient."
+    },
+    {
+      "title": "Find the work done",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "Owen packs 325 cartons per hour. He packs for 8 hours. How many cartons does he pack altogether?",
+      "options": {
+        "A": "333 cartons",
+        "B": "2600 cartons",
+        "C": "317 cartons",
+        "D": "40 cartons"
+      },
+      "answer": "B",
+      "explanation": "Work = rate × time = 325 × 8 = 2600 cartons.",
+      "wrong": {
+        "A": "You added (325 + 8). Each hour he packs 325, so multiply.",
+        "C": "You subtracted (325 − 8). Use work = rate × time.",
+        "D": "You roughly divided. Use work = rate × time = 325 × 8."
+      },
+      "mistakes": "Adding, subtracting, or dividing instead of multiplying."
+    },
+    {
+      "title": "Distributive / make 100 (×25)",
+      "level": 5,
+      "topic": "distributive",
+      "isReview": true,
+      "q": "Use a smart way to find 376 × 25. Which answer is correct?",
+      "options": {
+        "A": "3760",
+        "B": "9400",
+        "C": "9425",
+        "D": "9000"
+      },
+      "answer": "B",
+      "explanation": "25 = 100 ÷ 4, so 376 × 25 = 376 × 100 ÷ 4 = 37600 ÷ 4 = 9400. Or (400 − 24) × 25 = 10000 − 600 = 9400.",
+      "wrong": {
+        "A": "You may have done 376 × 10. Multiply by 25, not 10: 376 × 25 = 9400.",
+        "C": "Close but off: 377 × 25 = 9425. Here the factor is 376, so 9400.",
+        "D": "Rough estimate only. Exact: 376 × 100 ÷ 4 = 9400."
+      },
+      "mistakes": "Treating ×25 as ×10; off-by-one on the factor; approximating instead of exact."
+    },
+    {
+      "title": "Directions",
+      "level": 5,
+      "topic": "directions",
+      "isReview": true,
+      "q": "Emma walks from her house. The park is north of her house. The ice-cream shop is east of the park. In which direction is the ice-cream shop from Emma's house?",
+      "options": {
+        "A": "north-east",
+        "B": "south-east",
+        "C": "north-west",
+        "D": "east"
+      },
+      "answer": "A",
+      "explanation": "From the house go north to the park, then east to the shop. Combined, the shop is north-east of Emma's house.",
+      "wrong": {
+        "B": "South would be opposite of north. She goes north first, then east → north-east.",
+        "C": "West is opposite of east. After going north, she goes east → north-east.",
+        "D": "East alone ignores the north step. Both directions matter: north-east."
+      },
+      "mistakes": "Using only one of the two directions; swapping north/south or east/west."
+    },
+    {
+      "title": "Remaining work with ×25 rate",
+      "level": 5,
+      "topic": "work rate + distributive",
+      "isReview": false,
+      "challenge": true,
+      "q": "There are 7200 labels to stick. Ella's rate is 36 × 25 labels per hour (use a smart way). After she works for 5 hours, how many labels are still left?",
+      "options": {
+        "A": "2700 labels",
+        "B": "4500 labels",
+        "C": "180 labels",
+        "D": "7175 labels"
+      },
+      "answer": "A",
+      "explanation": "First find the rate: 36 × 25 = 36 × 100 ÷ 4 = 3600 ÷ 4 = 900 labels per hour. Done in 5 hours: 900 × 5 = 4500. Remaining = 7200 − 4500 = 2700 labels.",
+      "wrong": {
+        "B": "4500 is the amount already stuck, not what is left. Remaining = 7200 − 4500 = 2700.",
+        "C": "You may have used 36 × 5 and ignored ×25. Rate is 900 per hour, not 36.",
+        "D": "You only subtracted 25 (7200 − 25). Find rate first (900), then subtract 900 × 5."
+      },
+      "mistakes": "Reporting done instead of remaining; skipping the ×25 rate step; subtracting the wrong quantity."
+    }
+  ]
+}
