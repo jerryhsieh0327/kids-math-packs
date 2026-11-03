@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-03",
+  "child": "Seren",
+  "label": "",
+  "level": 5,
+  "topic": "Lesson 27 Work Rate + syllabus review (比较效率／多车单位／分配律×25／中括号)",
+  "formulas": [
+    "Work ÷ Time = Rate (工作效率)",
+    "Rate × Time = Work (工作量)",
+    "Work ÷ Rate = Time (求时间／天数)",
+    "Unit rate from multi agents/trips: total ÷ trucks ÷ trips",
+    "×25 smart way: n×100÷4 or (a+b)×25",
+    "Order: ( ) then [ ], then ×÷, then +−"
+  ],
+  "questions": [
+    {
+      "title": "比较效率",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "小明 8 小时完成了 2880 个零件，王阿姨 6 小时完成了 2520 个零件。谁的工作效率更高？高出多少？",
+      "options": {
+        "A": "小明更高，每小时多 60 个",
+        "B": "王阿姨更高，每小时多 60 个",
+        "C": "王阿姨更高，每小时多 360 个",
+        "D": "两人效率一样"
+      },
+      "answer": "B",
+      "explanation": "小明的效率：2880 ÷ 8 = 360（个/小时）。王阿姨的效率：2520 ÷ 6 = 420（个/小时）。420 − 360 = 60。所以王阿姨更高，每小时多 60 个。",
+      "wrong": {
+        "A": "把两人效率搞反了。小明是 360，王阿姨是 420，应是王阿姨更高。",
+        "C": "360 是小明的效率，不是高出的部分。高出的是 420 − 360 = 60。",
+        "D": "360 ≠ 420，两人效率不一样。"
+      },
+      "mistakes": "只比总量不比效率；把效率差值当成总量或某一边的效率。"
+    },
+    {
+      "title": "Multi-truck unit rate",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "5 trucks made 4 trips altogether and carried 10800 boxes of fruit. At this rate, how many boxes can 1 truck carry in 1 trip?",
+      "options": {
+        "A": "2160 boxes",
+        "B": "2700 boxes",
+        "C": "540 boxes",
+        "D": "1350 boxes"
+      },
+      "answer": "C",
+      "explanation": "First find one truck's total across all trips: 10800 ÷ 5 = 2160. Then one trip: 2160 ÷ 4 = 540. Or 10800 ÷ (5 × 4) = 10800 ÷ 20 = 540 boxes per truck per trip.",
+      "wrong": {
+        "A": "2160 is 10800 ÷ 5 (one truck for all 4 trips). Divide by 4 more for one trip: 540.",
+        "B": "2700 is 10800 ÷ 4 (all trucks for one trip). Divide by 5 for one truck: 540.",
+        "D": "1350 may come from 10800 ÷ 8. Use both factors: 10800 ÷ 5 ÷ 4 = 540."
+      },
+      "mistakes": "Dividing by only trucks or only trips; inventing another divisor."
+    },
+    {
+      "title": "求工作量",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "李师傅每小时修 145 个零件，他一共工作了 16 小时。李师傅一共修了多少个零件？",
+      "options": {
+        "A": "2320 个",
+        "B": "1610 个",
+        "C": "1450 个",
+        "D": "2610 个"
+      },
+      "answer": "A",
+      "explanation": "工作量 = 效率 × 时间：145 × 16。145 × 10 = 1450，145 × 6 = 870，1450 + 870 = 2320。所以一共修了 2320 个。",
+      "wrong": {
+        "B": "1610 像是 145×10+160 之类的误算。正确：145×16=2320。",
+        "C": "1450 只是 145×10，还少算了 6 小时：再加 870 得 2320。",
+        "D": "2610 偏大。验算：145×16=2320。"
+      },
+      "mistakes": "只乘一部分时间；加减代替乘法。"
+    },
+    {
+      "title": "Distributive / ×25",
+      "level": 5,
+      "topic": "distributive / mental math",
+      "isReview": true,
+      "q": "Use a smart way to find 536 × 25. Which answer is correct?",
+      "options": {
+        "A": "5360",
+        "B": "13400",
+        "C": "1340",
+        "D": "10720"
+      },
+      "answer": "B",
+      "explanation": "Smart way: 536 × 25 = 536 × 100 ÷ 4 = 53600 ÷ 4 = 13400. Check: (500 + 36) × 25 = 12500 + 900 = 13400.",
+      "wrong": {
+        "A": "5360 is 536 × 10. Remember ×25 = ×100 ÷ 4, not ×10.",
+        "C": "1340 is about 536 × 2.5 without placing zeros. Full product is 13400.",
+        "D": "10720 is 536 × 20. You still need another ×5: 536 × 5 = 2680, and 10720 + 2680 = 13400."
+      },
+      "mistakes": "Treating ×25 as ×10; dropping a zero after ÷4; stopping at ×20."
+    },
+    {
+      "title": "中括号运算",
+      "level": 5,
+      "topic": "order of operations",
+      "isReview": true,
+      "q": "计算：[840 ÷ (28 − 4)] × 36。正确结果是哪一个？",
+      "options": {
+        "A": "840",
+        "B": "1050",
+        "C": "1260",
+        "D": "1440"
+      },
+      "answer": "C",
+      "explanation": "先算小括号：28 − 4 = 24。再算中括号里的除法：840 ÷ 24 = 35。最后 35 × 36 = 1260。",
+      "wrong": {
+        "A": "840 是原题里的被除数，还没做完乘 36。35 × 36 = 1260。",
+        "B": "1050 可能来自 840÷24×30 或别的估乘。正确：35×36=1260。",
+        "D": "1440 像是 40×36。括号内是 24 不是 21，840÷24=35，不是 40。"
+      },
+      "mistakes": "忘了最后一步乘法；括号算错导致商偏大。"
+    },
+    {
+      "title": "Head start then together",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "challenge": true,
+      "q": "There are 7200 books to pack. Emma packs 180 books per hour alone for 5 hours. Then Lucas joins her, and together they pack 420 books per hour. How many more hours do they need together to finish the rest?",
+      "options": {
+        "A": "12 hours",
+        "B": "15 hours",
+        "C": "18 hours",
+        "D": "10 hours"
+      },
+      "answer": "B",
+      "explanation": "Emma alone for 5 hours: 180 × 5 = 900 books. Remaining: 7200 − 900 = 6300 books. Together rate: 420 books per hour. Time left: 6300 ÷ 420 = 15 hours.",
+      "wrong": {
+        "A": "12 ignores the head start or uses a wrong remaining. First subtract 900, then 6300 ÷ 420 = 15.",
+        "C": "18 may come from 7200 ÷ 400. Use remaining 6300 and rate 420: 15 hours.",
+        "D": "10 is 1800÷180 or similar mix-up. Done is 900, left is 6300, 6300÷420=15."
+      },
+      "mistakes": "Forgetting to subtract Emma's head-start work; dividing the full total by the together rate."
+    }
+  ]
+}
