@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-06",
+  "child": "Seren",
+  "label": "",
+  "level": 5,
+  "topic": "Lesson 27 Work Rate + syllabus review (比较效率／多车单位／推算天数／未知因数／结合律)",
+  "formulas": [
+    "Work ÷ Time = Rate (工作效率)",
+    "Rate × Time = Work (工作量)",
+    "Work ÷ Rate = Time (求时间／天数)",
+    "Unit rate from multi agents: total ÷ (agents × trips)",
+    "Missing factor: product ÷ known factor",
+    "Associative: 125 × 8 = 1000; regroup to make 1000"
+  ],
+  "questions": [
+    {
+      "title": "比较效率",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "小明 9 小时完成了 3240 个零件，李师傅 7 小时完成了 2800 个零件。谁的工作效率更高？高出多少？",
+      "options": {
+        "A": "小明更高，每小时多 40 个",
+        "B": "李师傅更高，每小时多 40 个",
+        "C": "两人效率一样",
+        "D": "李师傅更高，每小时多 440 个"
+      },
+      "answer": "B",
+      "explanation": "小明效率：3240 ÷ 9 = 360（个/小时）。李师傅效率：2800 ÷ 7 = 400（个/小时）。400 − 360 = 40，所以李师傅更高，每小时多 40 个。",
+      "wrong": {
+        "A": "把两人效率算反了。小明每小时 360，李师傅每小时 400，是李师傅更快。",
+        "C": "两人效率不同：360 和 400，不是一样。",
+        "D": "440 是把工作量相减 3240−2800 或算错差值。正确差值是效率差 400−360=40。"
+      },
+      "mistakes": "只比总量不比每小时；把两人效率搞反；用总量差当效率差。"
+    },
+    {
+      "title": "Multi-truck unit rate",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "6 trucks made 3 trips altogether and carried 9720 boxes of fruit. At this rate, how many boxes can 1 truck carry in 1 trip?",
+      "options": {
+        "A": "1620 boxes",
+        "B": "3240 boxes",
+        "C": "540 boxes",
+        "D": "1080 boxes"
+      },
+      "answer": "C",
+      "explanation": "Total truck-trips: 6 × 3 = 18. Unit rate: 9720 ÷ 18 = 540 boxes per truck per trip. (Or 9720 ÷ 6 = 1620 for one truck's 3 trips, then 1620 ÷ 3 = 540.)",
+      "wrong": {
+        "A": "1620 is 9720 ÷ 6 (one truck's 3 trips total), not one trip. Divide by 3 more: 540.",
+        "B": "3240 is 9720 ÷ 3 (all trucks in one trip). Still need ÷ 6: 540.",
+        "D": "1080 is 9720 ÷ 9. Use ÷ (6 × 3) = ÷ 18 → 540."
+      },
+      "mistakes": "Dividing by only trucks or only trips; forgetting to divide by both."
+    },
+    {
+      "title": "按效率推算天数",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "王阿姨 8 天缝了 2880 件衣服。照这样的速度，缝 5040 件衣服需要几天？",
+      "options": {
+        "A": "12 天",
+        "B": "14 天",
+        "C": "16 天",
+        "D": "18 天"
+      },
+      "answer": "B",
+      "explanation": "每天效率：2880 ÷ 8 = 360（件/天）。天数：5040 ÷ 360 = 14。所以需要 14 天。",
+      "wrong": {
+        "A": "12 偏小。360 × 12 = 4320，还不到 5040。",
+        "C": "16 偏大。360 × 16 = 5760，超过 5040。",
+        "D": "18 太大。可用比例：5040 ÷ 2880 = 1.75，8 × 1.75 = 14。"
+      },
+      "mistakes": "用加减代替除法；比例算错；忘记先求每天效率。"
+    },
+    {
+      "title": "Missing factor",
+      "level": 5,
+      "topic": "missing factor",
+      "isReview": true,
+      "q": "What number belongs in the box? □ × 26 = 4784",
+      "options": {
+        "A": "174",
+        "B": "184",
+        "C": "194",
+        "D": "164"
+      },
+      "answer": "B",
+      "explanation": "Missing factor = 4784 ÷ 26. Try 26 × 180 = 4680. Remainder 4784 − 4680 = 104, and 104 ÷ 26 = 4. So 180 + 4 = 184. Check: 26 × 184 = 4784.",
+      "wrong": {
+        "A": "174 is too small (same low-quotient pattern). 26 × 174 = 4524, short of 4784 by 260.",
+        "C": "194 is too big. 26 × 194 = 5044, over 4784.",
+        "D": "164 is much too small. 26 × 164 = 4264. Use 26 × 180 = 4680, then +4 → 184."
+      },
+      "mistakes": "Underestimating the quotient (picking tens too low); not checking by multiplying back."
+    },
+    {
+      "title": "结合律简便运算",
+      "level": 5,
+      "topic": "associative",
+      "isReview": true,
+      "q": "用简便方法计算 125 × 56 × 8。正确结果是哪一个？",
+      "options": {
+        "A": "56000",
+        "B": "7000",
+        "C": "44800",
+        "D": "50000"
+      },
+      "answer": "A",
+      "explanation": "先算 125 × 8 = 1000，再算 1000 × 56 = 56000。利用结合律把 125 和 8 结合成 1000，计算更简便。",
+      "wrong": {
+        "B": "7000 可能是 125 × 56 再除错或漏乘 8。完整应是 125 × 8 × 56 = 56000。",
+        "C": "44800 = 800 × 56，把 125×8 错成了 800。125 × 8 = 1000，不是 800。",
+        "D": "50000 是近似。精确：125 × 8 = 1000，1000 × 56 = 56000。"
+      },
+      "mistakes": "125×8 算成 800 或 100；漏乘某一个因数。"
+    },
+    {
+      "title": "Plan vs actual",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "challenge": true,
+      "q": "A factory planned to make 10800 toys in 18 days (same number each day). They finished all 10800 toys in 12 days. How many more toys did they make per day than planned?",
+      "options": {
+        "A": "300 toys more per day",
+        "B": "450 toys more per day",
+        "C": "600 toys more per day",
+        "D": "150 toys more per day"
+      },
+      "answer": "A",
+      "explanation": "Planned rate: 10800 ÷ 18 = 600 toys/day. Actual rate: 10800 ÷ 12 = 900 toys/day. Difference: 900 − 600 = 300 more toys per day.",
+      "wrong": {
+        "B": "450 is half of 900 or a mix of 18−12=6 into the wrong place. Compare daily rates: 900 − 600 = 300.",
+        "C": "600 is the planned daily rate, not how many more. Actual is 900, so more = 300.",
+        "D": "150 is 900 − 750 or (18−12)×25 style slip. Correct: 10800÷18=600, 10800÷12=900, difference 300."
+      },
+      "mistakes": "Reporting the planned or actual rate instead of the difference; subtracting days instead of rates."
+    }
+  ]
+}
