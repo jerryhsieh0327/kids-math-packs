@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-07",
+  "child": "Seren",
+  "label": "",
+  "level": 5,
+  "topic": "Lesson 27 Work Rate + syllabus review (求工作量／剩余／算式对应／分配律×25／中括号)",
+  "formulas": [
+    "Work ÷ Time = Rate (工作效率)",
+    "Rate × Time = Work (工作量)",
+    "Work ÷ Rate = Time (求时间／天数)",
+    "Remaining = total − rate × hours",
+    "Expression ↔ story for remaining days",
+    "×25 = ×100 ÷ 4",
+    "[ ] then ×÷ then +−"
+  ],
+  "questions": [
+    {
+      "title": "求工作量",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "李师傅每小时修 268 个零件，他一共工作了 15 小时。李师傅一共修了多少个零件？",
+      "options": {
+        "A": "4020 个",
+        "B": "2830 个",
+        "C": "2680 个",
+        "D": "4150 个"
+      },
+      "answer": "A",
+      "explanation": "工作量 = 效率 × 时间：268 × 15 = 4020。所以李师傅一共修了 4020 个零件。",
+      "wrong": {
+        "B": "2830 可能是把 268+15 或乘法算错。正确是 268 × 15 = 4020。",
+        "C": "2680 只算了 268 × 10，漏乘了剩下的 5。完整应是 268 × 15 = 4020。",
+        "D": "4150 多算了。268 × 15 = 268 × 10 + 268 × 5 = 2680 + 1340 = 4020。"
+      },
+      "mistakes": "用加法代替乘法；只乘 10 漏乘 5；乘法进位出错。"
+    },
+    {
+      "title": "Remaining work",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "There are 8640 stickers to put on cards. Emma puts on 360 stickers per hour. After she works for 9 hours, how many stickers are still left?",
+      "options": {
+        "A": "5400 stickers",
+        "B": "3240 stickers",
+        "C": "8280 stickers",
+        "D": "4800 stickers"
+      },
+      "answer": "A",
+      "explanation": "Done in 9 hours: 360 × 9 = 3240 stickers. Remaining: 8640 − 3240 = 5400 stickers.",
+      "wrong": {
+        "B": "3240 is the amount already done (360 × 9), not what is left. Remaining = 8640 − 3240 = 5400.",
+        "C": "8280 is 8640 − 360 (subtracted only 1 hour). Need to subtract 9 hours of work: 8640 − 3240 = 5400.",
+        "D": "4800 comes from a wrong product or subtraction. Correct: 360 × 9 = 3240, then 8640 − 3240 = 5400."
+      },
+      "mistakes": "Reporting done amount instead of remaining; subtracting only one hour's work; wrong multiplication."
+    },
+    {
+      "title": "算式对应问题",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "算式 (9600 − 3840) ÷ (3840 ÷ 8) 可以解答下面哪个问题？",
+      "options": {
+        "A": "王阿姨 8 天缝了 3840 件衣服。已经缝了 8 天，照此速度把剩下的缝完，还要几天？",
+        "B": "王阿姨每天缝 3840 件，8 天一共缝多少件？",
+        "C": "一共有 9600 件衣服，8 天缝完，平均每天缝多少件？",
+        "D": "王阿姨 8 天缝了 3840 件。照这样的速度，缝 9600 件一共要几天？"
+      },
+      "answer": "A",
+      "explanation": "括号里 3840 ÷ 8 = 480，是每天效率。9600 − 3840 = 5760，是剩余工作量。5760 ÷ 480 = 12，正是「剩下的还要几天」。所以选 A。",
+      "wrong": {
+        "B": "B 对应的是 3840 × 8，和这个算式无关。",
+        "C": "C 对应的是 9600 ÷ 8，没有用到 3840，也不需要先减再除。",
+        "D": "D 对应的是 9600 ÷ (3840 ÷ 8) = 20，没有先减去已经缝完的 3840。本算式多了一步 (9600 − 3840)。"
+      },
+      "mistakes": "忽略「先减剩余」这一步；把求总量或求平均当成同一算式。"
+    },
+    {
+      "title": "Distributive / ×25",
+      "level": 5,
+      "topic": "distributive",
+      "isReview": true,
+      "q": "Use a smart way to find 624 × 25. Which answer is correct?",
+      "options": {
+        "A": "6240",
+        "B": "15600",
+        "C": "15625",
+        "D": "12480"
+      },
+      "answer": "B",
+      "explanation": "Smart way: 624 × 25 = 624 × 100 ÷ 4 = 62400 ÷ 4 = 15600. (Or (600 + 24) × 25 = 15000 + 600 = 15600.)",
+      "wrong": {
+        "A": "6240 is 624 × 10. ×25 is not ×10; use ×100 ÷ 4 → 15600.",
+        "C": "15625 is 625 × 25. This problem is 624 × 25 = 15600.",
+        "D": "12480 is 624 × 20. Still need ×5 more, or use ×100 ÷ 4 → 15600."
+      },
+      "mistakes": "Treating ×25 as ×10; confusing with 625×25; only multiplying by 20."
+    },
+    {
+      "title": "中括号运算",
+      "level": 5,
+      "topic": "order of operations",
+      "isReview": true,
+      "q": "计算：[1260 ÷ (36 − 6)] × 48。正确结果是哪一个？",
+      "options": {
+        "A": "1680",
+        "B": "2016",
+        "C": "2520",
+        "D": "1512"
+      },
+      "answer": "B",
+      "explanation": "先算小括号：36 − 6 = 30。再算中括号：1260 ÷ 30 = 42。最后：42 × 48 = 2016。",
+      "wrong": {
+        "A": "1680 = 42 × 40，把 48 错成了 40。正确是 42 × 48 = 2016。",
+        "C": "2520 = 1260 ÷ 36 × 72 一类错误，或忘记减 6 仍用 36：1260 ÷ 36 = 35，再乘错。应先 36−6=30，1260÷30=42，42×48=2016。",
+        "D": "1512 是乘法或除法算错。正确步骤：36−6=30，1260÷30=42，42×48=2016。"
+      },
+      "mistakes": "忘记先算括号里的减法；42×48 算错；运算顺序颠倒。"
+    },
+    {
+      "title": "Plan vs actual",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "challenge": true,
+      "q": "A factory planned to make 13500 toys in 15 days (same number each day). They finished all 13500 toys in 10 days instead. How many more toys did they make per day than planned?",
+      "options": {
+        "A": "450 toys more per day",
+        "B": "900 toys more per day",
+        "C": "350 toys more per day",
+        "D": "1350 toys more per day"
+      },
+      "answer": "A",
+      "explanation": "Planned rate: 13500 ÷ 15 = 900 toys/day. Actual rate: 13500 ÷ 10 = 1350 toys/day. Difference: 1350 − 900 = 450 more toys per day.",
+      "wrong": {
+        "B": "900 is the planned daily rate, not how many more. Actual is 1350, so more = 450.",
+        "C": "350 is an arithmetic slip. Correct: 13500÷15=900, 13500÷10=1350, difference 450.",
+        "D": "1350 is the actual daily rate, not the difference. More = 1350 − 900 = 450."
+      },
+      "mistakes": "Reporting the planned or actual rate instead of the difference; subtracting days instead of rates."
+    }
+  ]
+}
