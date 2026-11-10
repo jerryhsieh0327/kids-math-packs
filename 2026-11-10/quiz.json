@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-10",
+  "child": "Seren",
+  "label": "",
+  "level": 5,
+  "topic": "Lesson 27 Work Rate + syllabus review (求效率／多车单位／推算天数／方位／结合律)",
+  "formulas": [
+    "Work ÷ Time = Rate (工作效率)",
+    "Rate × Time = Work (工作量)",
+    "Work ÷ Rate = Time (求时间／天数)",
+    "Unit rate from multi agents: total ÷ (trucks × trips)",
+    "Directions: N/S/E/W + NE/NW/SE/SW (方位)",
+    "Associative: 125 × 8 = 1000; regroup to make 1000 (结合律)"
+  ],
+  "questions": [
+    {
+      "title": "求工作效率",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "下面是一张工作效率表。周阿姨工作了 18 小时，一共包装了 5292 个礼盒。表里「每小时包装个数」这一格是空的，应填多少？",
+      "options": {
+        "A": "294 个",
+        "B": "304 个",
+        "C": "284 个",
+        "D": "5274 个"
+      },
+      "answer": "A",
+      "explanation": "效率 = 工作量 ÷ 时间：5292 ÷ 18。18 × 290 = 5220，5292 − 5220 = 72，72 ÷ 18 = 4，所以 290 + 4 = 294。周阿姨每小时包装 294 个礼盒。",
+      "wrong": {
+        "B": "304 是估商偏大。18 × 300 = 5400，已经比 5292 多 108，应再减去 108 ÷ 18 = 6，得到 294，不是再往上加。",
+        "D": "5274 是 5292 − 18，用减法代替了除法。求每小时效率要用 5292 ÷ 18 = 294。",
+        "C": "284 是估商偏小。18 × 280 = 5040，5292 − 5040 = 252，252 ÷ 18 = 14，应是 280 + 14 = 294，不是 284。"
+      },
+      "mistakes": "估商偏小或偏大；用减法代替除法。"
+    },
+    {
+      "title": "Multi-truck unit rate",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "8 trucks made 3 trips altogether and carried 13440 crates of apples. At this rate, how many crates can 1 truck carry in 1 trip?",
+      "options": {
+        "A": "1680 crates",
+        "B": "560 crates",
+        "C": "4480 crates",
+        "D": "5040 crates"
+      },
+      "answer": "B",
+      "explanation": "Total truck-trips: 8 × 3 = 24. Unit rate: 13440 ÷ 24 = 560 crates per truck per trip. (Or 13440 ÷ 8 = 1680 for one truck's 3 trips, then 1680 ÷ 3 = 560.)",
+      "wrong": {
+        "A": "1680 is 13440 ÷ 8 (one truck's 3 trips total), not one trip. Divide by 3 more: 560.",
+        "C": "4480 is 13440 ÷ 3 (all trucks in one trip). Still need ÷ 8: 560.",
+        "D": "5040 is 1680 × 3, multiplying instead of dividing by the 3 trips. Use ÷ (8 × 3) = ÷ 24 → 560."
+      },
+      "mistakes": "Dividing by only trucks or only trips; multiplying instead of dividing by both."
+    },
+    {
+      "title": "按效率推算天数",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "吴师傅 12 天做了 4320 个零件。照这样的速度，做 7560 个零件需要几天？",
+      "options": {
+        "A": "21 天",
+        "B": "16 天",
+        "C": "18 天",
+        "D": "24 天"
+      },
+      "answer": "A",
+      "explanation": "先求每天效率：4320 ÷ 12 = 360 个。再求天数：7560 ÷ 360 = 21 天。也可以先求倍数：7560 ÷ 4320 = 7/4，12 × 7/4 = 21 天。",
+      "wrong": {
+        "B": "16 天没有按同样的效率放大。应用 4320 ÷ 12 = 360，再 7560 ÷ 360 = 21。",
+        "D": "24 天是把 12 天直接乘 2。7560 不是 4320 的 2 倍（2 倍是 8640），正确倍数是 7/4，12 × 7/4 = 21。",
+        "C": "18 天可能是效率算错后再除。正确效率是 4320 ÷ 12 = 360，7560 ÷ 360 = 21。"
+      },
+      "mistakes": "没有先求出每天效率；把数量关系错看成整倍再乘天数。"
+    },
+    {
+      "title": "Directions",
+      "level": 5,
+      "topic": "directions",
+      "isReview": true,
+      "q": "The museum is south of the school. The cafe is west of the museum. In which direction is the cafe from the school?",
+      "options": {
+        "A": "south-east",
+        "B": "west",
+        "C": "south",
+        "D": "south-west"
+      },
+      "answer": "D",
+      "explanation": "From the school, first go south to the museum, then from the museum go west to the cafe. South and then west together is south-west of the school.",
+      "wrong": {
+        "A": "South-east would be south and then east. The cafe is west of the museum, not east.",
+        "B": "West is only the second step. The cafe is also south of the school, so the direction is south-west.",
+        "C": "South only reaches the museum. The cafe is still west of the museum, so from the school it is south-west."
+      },
+      "mistakes": "Using only the first or only the second direction; mixing up east and west."
+    },
+    {
+      "title": "结合律简便运算",
+      "level": 5,
+      "topic": "associative",
+      "isReview": true,
+      "q": "用简便方法计算 125 × 88 × 8。正确结果是哪一个？",
+      "options": {
+        "A": "11000",
+        "B": "88000",
+        "C": "80000",
+        "D": "8800"
+      },
+      "answer": "B",
+      "explanation": "先算 125 × 8 = 1000，再算 1000 × 88 = 88000。利用结合律把 125 和 8 结合成 1000，计算更简便。",
+      "wrong": {
+        "A": "11000 是 125 × 88，漏乘了 8。完整应是 125 × 8 × 88 = 1000 × 88 = 88000。",
+        "C": "80000 是把 88 当成 80：125 × 8 × 80 = 80000。题目是 88，所以 1000 × 88 = 88000。",
+        "D": "8800 少写了一个 0。125 × 8 = 1000，1000 × 88 = 88000，不是 8800。"
+      },
+      "mistakes": "漏乘 8；把 88 看成 80；结合成 1000 后少写一个 0。"
+    },
+    {
+      "title": "Head start then together",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "challenge": true,
+      "q": "There are 11520 books to pack. Oliver packs 240 books per hour alone for 8 hours. Then Mia joins him, and together they pack 640 books per hour. How many more hours do they need together to finish the rest?",
+      "options": {
+        "A": "15 hours",
+        "B": "12 hours",
+        "C": "18 hours",
+        "D": "48 hours"
+      },
+      "answer": "A",
+      "explanation": "Oliver alone for 8 hours: 240 × 8 = 1920 books. Remaining: 11520 − 1920 = 9600 books. Together rate: 640 books per hour. Time left: 9600 ÷ 640 = 15 hours.",
+      "wrong": {
+        "B": "12 hours uses a wrong remaining or rate. Done is 1920, left is 9600, and 9600 ÷ 640 = 15.",
+        "D": "48 hours is 11520 ÷ 240, as if Oliver packed everything alone. After the head start, they work together at 640 books per hour for 15 hours.",
+        "C": "18 hours is 11520 ÷ 640, which ignores Oliver's 8-hour head start. First subtract 1920, then 9600 ÷ 640 = 15."
+      },
+      "mistakes": "Forgetting to subtract Oliver's head-start work; dividing the full total by the together rate or by Oliver's rate alone."
+    }
+  ]
+}
