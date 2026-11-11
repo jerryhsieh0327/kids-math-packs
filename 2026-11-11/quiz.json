@@ -1,0 +1,144 @@
+{
+  "date": "2026-11-11",
+  "child": "Seren",
+  "label": "",
+  "level": 5,
+  "topic": "Lesson 27 Work Rate + syllabus review (求时间／剩余／算式对应／未知因数／先除后加)",
+  "formulas": [
+    "Work ÷ Time = Rate (工作效率)",
+    "Rate × Time = Work (工作量)",
+    "Work ÷ Rate = Time (求时间)",
+    "Remaining work = total − rate × time already worked (剩余工作量)",
+    "Missing factor: □ × n = P → □ = P ÷ n (求未知因数)",
+    "Order of operations: ÷ before + (先除后加)"
+  ],
+  "questions": [
+    {
+      "title": "求时间",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "孙叔叔每小时做 276 个零件，做完 4968 个零件要几小时？",
+      "options": {
+        "A": "16 小时",
+        "B": "18 小时",
+        "C": "20 小时",
+        "D": "17 小时"
+      },
+      "answer": "B",
+      "explanation": "时间 = 工作量 ÷ 效率：4968 ÷ 276。先估：276 × 18 = 276 × 20 − 276 × 2 = 5520 − 552 = 4968，正好是 18 小时。",
+      "wrong": {
+        "A": "16 小时是估商偏小。276 × 16 = 4416，4968 − 4416 = 552，552 ÷ 276 = 2，还应再加 2 小时，得到 18 小时。",
+        "C": "20 小时是估商偏大。276 × 20 = 5520，已经比 4968 多 552，多了正好 2 小时的工作量，应是 18 小时。",
+        "D": "17 小时还差一点。276 × 17 = 4692，4968 − 4692 = 276，正好还差 1 小时的工作量，所以是 18 小时。"
+      },
+      "mistakes": "估商偏小或偏大；除完后没有用乘法验算。"
+    },
+    {
+      "title": "Remaining work",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "There are 10260 posters to print. Noah prints 395 posters per hour. After he works for 12 hours, how many posters are left?",
+      "options": {
+        "A": "5520 posters",
+        "B": "4740 posters",
+        "C": "9865 posters",
+        "D": "6310 posters"
+      },
+      "answer": "A",
+      "explanation": "Done in 12 hours: 395 × 12 = 4740 posters. Remaining: 10260 − 4740 = 5520 posters.",
+      "wrong": {
+        "B": "4740 is the number already printed (395 × 12), not the number left. Subtract it from the total: 10260 − 4740 = 5520.",
+        "C": "9865 is 10260 − 395, which subtracts only 1 hour of work. He worked 12 hours, so subtract 395 × 12 = 4740.",
+        "D": "6310 is 10260 − 3950, which subtracts only 10 hours (395 × 10). He worked 12 hours, so also subtract 395 × 2 = 790 more: 6310 − 790 = 5520."
+      },
+      "mistakes": "Reporting the amount already done instead of the remainder; subtracting only 1 hour or 10 hours instead of 12."
+    },
+    {
+      "title": "算式对应问题",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "q": "算式 (11700 − 4680) ÷ (4680 ÷ 12) 可以解答下面哪个问题？",
+      "options": {
+        "A": "刘阿姨 12 天做了 4680 个灯笼。已经做了 12 天，照此速度把剩下的 11700−4680 个做完，还要几天？",
+        "B": "刘阿姨每天做 4680 个灯笼，12 天一共做多少个？",
+        "C": "一共有 11700 个灯笼，12 天做完，平均每天做多少个？",
+        "D": "刘阿姨 12 天做了 4680 个灯笼。照这样的速度，做 11700 个一共要几天？"
+      },
+      "answer": "A",
+      "explanation": "4680 ÷ 12 是每天的效率（390 个）。11700 − 4680 是已经做了 12 天后还剩的数量（7020 个）。再用剩余工作量除以每天效率：7020 ÷ 390 = 18，表示还要 18 天。所以这个算式求的是「剩下的还要几天」，不是一共要几天。",
+      "wrong": {
+        "B": "每天做 4680 个、做 12 天，对应的算式是 4680 × 12，不是 (11700 − 4680) ÷ (4680 ÷ 12)。",
+        "C": "平均每天做多少个，对应的算式是 11700 ÷ 12，没有先减已经做完的，也没有再除以效率。",
+        "D": "求一共要几天，应直接用 11700 ÷ (4680 ÷ 12) = 30 天，不必先减去已经做完的 4680。原算式先减再除，求的是还要几天。"
+      },
+      "mistakes": "把「还要几天」和「一共要几天」弄混；没有看懂算式先减后除的含义。"
+    },
+    {
+      "title": "Missing factor",
+      "level": 5,
+      "topic": "missing factor",
+      "isReview": true,
+      "q": "What number belongs in the box? □ × 34 = 6324",
+      "options": {
+        "A": "176",
+        "B": "186",
+        "C": "196",
+        "D": "166"
+      },
+      "answer": "B",
+      "explanation": "□ = 6324 ÷ 34. First try 34 × 180 = 6120. 6324 − 6120 = 204, and 204 ÷ 34 = 6, so 180 + 6 = 186. Check: 34 × 186 = 34 × 200 − 34 × 14 = 6800 − 476 = 6324.",
+      "wrong": {
+        "A": "176 is a low estimate. 34 × 176 = 5984, and 6324 − 5984 = 340. 340 ÷ 34 = 10, so add 10 more: 176 + 10 = 186.",
+        "C": "196 is a high estimate. 34 × 196 = 6664, which is already 340 more than 6324. 340 ÷ 34 = 10, so subtract 10: 196 − 10 = 186.",
+        "D": "166 is even lower. 34 × 166 = 5644, and 6324 − 5644 = 680. 680 ÷ 34 = 20, so 166 + 20 = 186."
+      },
+      "mistakes": "Estimating the quotient too low or too high and not checking with multiplication."
+    },
+    {
+      "title": "先除后加",
+      "level": 5,
+      "topic": "order of operations",
+      "isReview": true,
+      "q": "计算：7680 ÷ 24 + 185。正确结果是哪一个？",
+      "options": {
+        "A": "505",
+        "B": "320",
+        "C": "217",
+        "D": "3385"
+      },
+      "answer": "A",
+      "explanation": "没有括号时，先算除法再算加法：7680 ÷ 24 = 320，再算 320 + 185 = 505。",
+      "wrong": {
+        "B": "320 只算了 7680 ÷ 24，漏加了 185。完整算式是 320 + 185 = 505。",
+        "C": "217 是把 7680 看成了 768：768 ÷ 24 = 32，再加 185 得到 217。题目是 7680，商应是 320，再加 185 得 505。",
+        "D": "3385 是把商写成了 3200（多写了一个 0），再加 185。7680 ÷ 24 = 320，不是 3200。"
+      },
+      "mistakes": "漏掉加法；除法商的数位写错（少写或多写 0）。"
+    },
+    {
+      "title": "Plan vs actual",
+      "level": 5,
+      "topic": "work rate",
+      "isReview": false,
+      "challenge": true,
+      "q": "A workshop planned to assemble 15840 lamps in 16 days (the same number each day). They finished all 15840 lamps in 12 days. How many more lamps did they assemble each day than planned?",
+      "options": {
+        "A": "330 lamps more per day",
+        "B": "3960 lamps more per day",
+        "C": "990 lamps more per day",
+        "D": "1320 lamps more per day"
+      },
+      "answer": "A",
+      "explanation": "Planned rate: 15840 ÷ 16 = 990 lamps per day. Actual rate: 15840 ÷ 12 = 1320 lamps per day. Difference: 1320 − 990 = 330 more lamps per day. (Or: they saved 4 days, 4 × 990 = 3960 extra lamps in total, then 3960 ÷ 12 = 330 per day.)",
+      "wrong": {
+        "B": "3960 is the total extra lamps from the 4 days saved (4 × 990), not the extra amount per day. Divide by the 12 actual days: 3960 ÷ 12 = 330.",
+        "C": "990 is the planned daily amount, not how many more they made each day. Compare with the actual rate 1320, and 1320 − 990 = 330.",
+        "D": "1320 is the actual daily amount, not the difference. Subtract the planned rate: 1320 − 990 = 330."
+      },
+      "mistakes": "Stopping at the planned rate or the actual rate; treating the total extra (4 days × planned rate) as the daily difference."
+    }
+  ]
+}
